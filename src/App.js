@@ -20,11 +20,9 @@ function App() {
     if (cat === "All") {
       setShowMenu(menu);
     } else {
-      let filteredMenu = menu.filter((item) => {
-        if (item.category === cat) {
-          return item;
-        }
-      });
+      const filteredMenu = menu.filter((item) => item.category ===cat);
+
+      console.log(filteredMenu)
 
       setShowMenu(filteredMenu);
     }

@@ -2,7 +2,7 @@ import React from "react";
 import "./item.css";
 
 export const Item = (props) => {
-  const { title, cat, price, img, desc } = props;
+  const { title,  price, img, desc } = props;
   return (
     <div className="item-container">
       <div className="img-container">
